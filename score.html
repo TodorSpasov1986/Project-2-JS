@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Your Score</title>
+</head>
+<Header>
+    <a href="index.html">
+        <h1 class="logo">Sports Quiz</h1>
+    </a>
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="highScore.html" class="active">
+                    <h3>Score Board<i class="fa-solid fa-clipboard-list"></i></h3>
+                    </a>
+            </li>
+            <li>
+                <a href="index.html" class="active">
+                    <h3>Home <i class="fa-solid fa-house-user"></i></h3>
+                    </a>
+            </li>
+
+        </ul>
+    </nav>
+</Header>
+<div class="container">
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+            <button class="btn" type="submit" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save!</button>
+        </form>
+        <a class="btn" href="quiz.html">Play Again</a>
+        <a class="btn" href="index.html">Home</a>
+    </div>
+</div>
+
+<body>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/score.js"></script>
+    <script src="https://kit.fontawesome.com/fe7c0c9bbf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
