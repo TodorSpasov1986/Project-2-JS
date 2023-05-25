@@ -1,164 +1,112 @@
-const questions = [{
-        question: "How much is 2+2",
-        answers: [{
-                Text: "6",
-                correct: false
-            },
-            {
-                Text: "8",
-                correct: false
-            },
-            {
-                Text: "16",
-                correct: false
-            },
-            {
-                Text: "4",
-                correct: true
-            },
-        ]
-    },
-    {
-        question: "How much is 2x2",
-        answers: [{
-                Text: "6",
-                correct: false
-            },
-            {
-                Text: "4",
-                correct: true
-            },
-            {
-                Text: "16",
-                correct: false
-            },
-            {
-                Text: "8",
-                correct: false
-            },
-        ]
-    },
-    {
-        question: "How much is 2/2",
-        answers: [{
-                Text: "6",
-                correct: false
-            },
-            {
-                Text: "8",
-                correct: false
-            },
-            {
-                Text: "1",
-                correct: true
-            },
-            {
-                Text: "4",
-                correct: false
-            },
-        ]
-    },
-    {
-        question: "How much is 20x20",
-        answers: [{
-                Text: "600",
-                correct: false
-            },
-            {
-                Text: "80",
-                correct: false
-            },
-            {
-                Text: "160",
-                correct: false
-            },
-            {
-                Text: "400",
-                correct: true
-            },
-        ]
-    }
+const question = document.getElementById("question");
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const progressText = document.getElementById('progressText');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById("progressBarFull");
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
 
-];
-
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
-
-let currentQuestionIndex = 0;
+let currentQuestion = {};
+let acceptingAnswer = true;
 let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
 
-function startQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();
-}
+let questions = [];
 
-function showQuestion() {
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+fetch("https://opentdb.com/api.php?amount=20&category=21&difficulty=easy&type=multiple")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            const formattedQuestion = {
+                question: loadedQuestion.question
+            };
 
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innderHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer)
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            answerChoices.splice(
+                formattedQuestion.answer - 1,
+                0,
+                loadedQuestion.correct_answer
+            );
+
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion['choice' + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
+        
+        startGame();
+    })
+    .catch((err) => {
+        console.error(err);
     });
-}
 
-function resetState() {
-    nextButton.style.display = "none";
-    while (answerButtons.firstChild){
-        answerButtons.removeChild(answerButtons.firstChild);
+/* Constants*/
+const CORRECT_BONUS = 100;
+const MAX_QUESTIONS = 7;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+    game.classList.remove('hidden');
+    loader.classList.add('hidden');
+};
+
+getNewQuestion = () => {
+    if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score);
+        //go to the end page
+        return window.location.assign("\score.html");
     }
-}
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    // Update the progress bar
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}% `;
 
-function selectAnswer(e){
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.claaList.add("correct");
-        score++;
-            }else{
-                selectedBtn.classList.add("incorrect");
-            }
-            Array.from(answerButtons.children).forEach(button => {
-                if(button.dataset.correct === "true"){
-                    button.classList.add("correct");
-                }
-                button.disabled = true;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
 
-            })
-            nextButton.style.display = "block";
-}
-function showScore(){ 
-    resetState();
-    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
-}
+    choices.forEach(choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
 
-function handleNextButton(){
-    currentQuestionIndex++;
-    if(currentQuestionIndex < question.length){
-        showQuestion();
-            }else{
-                showScore();
-            }
-}
+    });
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswer = true;
+};
 
-nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
-        handleNextButton();
-    }else{
-        startQuiz()
-    }
+choices.forEach(choice => {
+    choice.addEventListener("click", e => {
+        if (!acceptingAnswer) return;
+
+        acceptingAnswer = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+
+
+        const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+        if (classToApply == "correct") {
+            incrementScore(CORRECT_BONUS);
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    })
 })
-startQuiz();
+
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
