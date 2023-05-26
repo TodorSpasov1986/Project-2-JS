@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Labrada:ital@0;1&family=Montserrat:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,700&display=swap');
 
 :root {
-  background-color: rgb(100, 149, 237);
+  background-color: rgb(75, 131, 235);
   font-size: 62.5%;
 
 }
@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserraterat', sans-serif;
-  color: rgb(228, 247, 237);
+  color: rgb(2, 2, 2);
 
 }
 
@@ -24,7 +24,7 @@ h4 {
 
 h1 {
   font-size: 4rem;
-  color: rgb(228, 247, 237);
+  color: rgb(2, 2, 2);
   margin-bottom: 3rem;
 }
 
@@ -42,16 +42,18 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: rgb(228, 247, 237);
+  color: rgb(2, 2, 2);
 }
 
 /* Header */
 header {
   height: 10rem;
 }
-#home{
-  background-color: rgba(100, 149, 237, 0.5);
+
+#home {
+  background-color: rgba(100, 149, 237, 0.75);
 }
+
 .logo {
   float: left;
   margin-left: 30px;
@@ -76,16 +78,16 @@ header {
 
 .menu a {
   text-decoration: none;
-  color: inherit;
+  color: rgb(2, 2, 2);
 }
 
 .menu a:hover {
-  border-bottom: 1px solid rgb(10, 158, 47);
-  color: rgb(10, 158, 47);
+  border-bottom: 1px solid rgb(2, 2, 2);
+  color: rgb(2, 2, 2);
 }
 
 i {
-  color: rgb(228, 247, 237);
+  color: rgb(2, 2, 2);
 }
 
 /* UTILITIES */
@@ -119,7 +121,7 @@ i {
 .flex-center {
   justify-content: center;
   align-items: center;
-  }
+}
 
 .justify-center {
   justify-content: center;
@@ -139,16 +141,16 @@ i {
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid #109e4b;
+  border: 0.2rem solid rgb(2, 2, 2);
   margin-bottom: 1rem;
   text-decoration: none;
-  color: rgb(228, 247, 237);
-  background-color: #82c01d;
+  color: rgb(2, 2, 2);
+  background-color: rgb(75, 131, 235);
 }
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.75);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -160,35 +162,40 @@ i {
 }
 
 /* Quiz */
-#game{
-  background-color: rgba(100, 149, 237, 0.5);
+#game {
+  background-color: rgba(100, 149, 237, 0.75);
 }
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
   border: 0.1 solid rgb(63, 79, 223, 0.25);
-  background-color: rgb(100, 149, 237);
+  background-color: rgb(75, 131, 235);
+  color: rgb(2, 2, 2);
+
 }
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.75);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
 
 .choice-prefix {
   padding: 1.5rem 2.5rem;
-  background-color: blue;
-  color: beige;
+  background-color: rgb(75, 131, 235);
+  color: rgb(2, 2, 2);
+  border: 0.2rem solid rgb(2, 2, 2);
 
 }
 
 .choice-text {
   padding: 1.5rem;
   width: 100%;
+  border: 0.2rem solid rgb(2, 2, 2);
 }
 
 .correct {
@@ -217,17 +224,18 @@ i {
 #progressBar {
   width: 20rem;
   height: 4rem;
-  border: 0.3rem solid rgb(30, 28, 153);
+  border: 0.3rem solid rgb(2, 2, 2);
   margin-top: 1.5rem;
 }
 
 #progressBarFull {
   height: 3.4rem;
-  background-color: rgb(30, 28, 153);
+  background-color: rgb(2, 2, 2);
   width: 0%;
 }
-#end{
-  background-color: rgba(100, 149, 237, 0.5);
+
+#end {
+  background-color: rgba(100, 149, 237, 0.75);
 }
 
 form {
@@ -245,11 +253,13 @@ input {
   border: none;
   box-shadow: 0 0.1rem 1.4rem rgba(86, 185, 235, 0.5);
 }
-#username{
+
+#username {
   color: black;
 }
+
 input::placeholder {
-  color: #109e4b;
+  color: rgb(2, 2, 2);
   text-align: left;
   font-size: 2rem;
 }
@@ -260,13 +270,15 @@ input::placeholder {
   padding-left: 0;
   margin-bottom: 4rem;
 }
-#highScore{
-  background-color: rgba(100, 149, 237, 0.5);
+
+#highScore {
+  background-color: rgba(100, 149, 237, 0.75);
 }
+
 .high-score {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
-  color: rgb(228, 247, 237);
+  color: rgb(2, 2, 2);
 }
 
 .high-score:hover {
