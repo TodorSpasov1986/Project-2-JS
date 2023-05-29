@@ -6,6 +6,8 @@ const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
 
+  
+
 let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
@@ -65,6 +67,7 @@ getNewQuestion = () => {
         return window.location.assign("\score.html");
     }
     questionCounter++;
+    console.log("progressText", progressText);
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     // Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}% `;
@@ -110,3 +113,4 @@ incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 }
+
