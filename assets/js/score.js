@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
@@ -13,7 +14,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-saveHighScore = (e) => {
+const saveHighScore = (e) => {
     e.preventDefault();
 
     const score = {

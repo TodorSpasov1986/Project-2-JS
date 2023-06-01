@@ -171,7 +171,7 @@ i {
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
-  border: 0.1 solid rgb(63, 79, 223, 0.25);
+  border: 0.1rem solid rgb(63, 79, 223, 0.25);
   background-color: rgb(75, 131, 235);
   color: rgb(2, 2, 2);
 
@@ -348,10 +348,6 @@ input::placeholder {
   .menu,
   .logo {
     line-height: 50px;
-  }
-  
-  .menu li {
-    float: center;
   }
 }
 @media (min-width: 50px) and (max-width: 499px){
