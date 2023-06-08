@@ -57,9 +57,15 @@
 
 ![Home Page](./assets/images/readme/landing.jpg)
 
+- __Loading__
+
+-  When the user presses the quiz page, a Loading circle appears until the quiz is not loaded completely.
+ 
+![Loading](./assets/images/readme/Loading.jpg)
+
 - __Quiz Page__
 
-  -  Page contains the same background image
+  -  Page contains the same background image.
   -  The Quiz page includes 7 questions with 4 answers each( 1 correct and 3 incorrect). 
   -  For every correct answer user get 100 points added to his total score.
   -  It have 2 progress bars which are reflecting every answered question.
@@ -87,30 +93,10 @@
   
   ![High Score](/assets/images/readme/High-scoreboard.jpg)
 
-- __Places__
-  - The Places will provide the user with Images, short description and a link for the location from google maps. 
-  - In this Section, the user will see the top 5 places in uk and will be able to choose from the best suited for the fishing trip and the location. 
-
-![Places](/assets/images/README/Places.jpg)
-
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to receive the weekly newsletter. The user will be asked to submit their full name, email address, 
-  date of birth, where he prefers to fish ( sea, lake, or river), and to leave a short feedback for the site.
-  - Next to the signup button it will have a clear button in case the user inputs the wrong information.
-
-![Sign Up](/assets/images/README/signup.jpg)
-
-- __Thank you__
-
-   - After the user successfully provides all of his requires sign-in detalis he will be transfer to a Thank you page with all the nav bar and footer elements.
-
-![Thank you](/assets/images/README/thankyou.png)
-
 ### Features Left to Implement
 
-- Will have 15 more fishing places with text and google maps locations
-- Will have 5 more news in the news section with  the latest newsletter available as well.
+- Will implement at least 2 more levels of difficulty for the sports quiz.  
+- Will add at least two more different categories with 3 levels of difficulty each.
   
 
 ## Testing 
@@ -119,55 +105,57 @@
    - Open the site from several different mobile devices, tablets, laptops, and desktop PCs, and all working and displaying as expected
    - Features testing
      - Navigational bar: All nav bar elements clicked and tested in Chrome, Internet Explorer, and Mozilla Firefox.
-     - Top 3 Section: The three Places links are tested and direct the user to the places page.
-     - News Section: Signup Link tested and direct the user to the signup page.
-     - Footer: Footer elements are tested in Chrome, Internet Explorer, and Mozilla Firefox and open the links in new blank pages.
-     - Places page: All 5 links are opening in a new blank page and displaying the correct google maps locations.
-     - Sign up form: The form tested on all available browser , user needs to enter all the form inputs excluding the Feedback textarea and then is directed to the Thank you page.
+     - All buttons tested in the above 3 browsers and all working like they should.
+     - The quiz is also working on all 3 browsers.
+     - The Score board is also displaying correctly.
+     - The loading circle is also tested on all 3 browsers with no problems or bugs.
   
 
 ### Validator Testing 
 
 - HTML
-  - Home page: No errors were returned when passing through the official W3C validator
-  ![W3C validator](/assets/images/README/Indexhtmlvalidation.jpg)
-  - Places page: No errors were returned when passing through the official W3C validator
-  ![W3C validator](/assets/images/README/placeshtmlvalidation.jpg)
-  - Gallery page: No errors were returned when passing through the official W3C validator
-  ![W3C validator](/assets/images/README/galleryhtmlvalidation.jpg)
-  - Sign up page: No errors were returned when passing through the official W3C validator
-  ![W3C validator](/assets/images/README/signuphtmlvalidation.jpg)
-  - Thank you page: No errors were returned when passing through the official W3C validator
-  ![W3C validator](/assets/images/README/thankyouhtmlvalidation.jpg)
+  - Landing page: No errors or warnings were returned when passing through the official W3C validator.
+  ![W3C validator](/assets/images/readme/Index-html.jpg)
+  - Quiz page: No errors were returned when passing through the official W3C validator, 2 warnings were returned.
+  ![W3C validator](/assets/images/readme/Quiz-html.jpg)
+  - HighScore page: No errors or warnings were returned when passing through the official W3C validator.
+  ![W3C validator](/assets/images/readme/HighScore-html.jpg)
+  - Score page: No errors were returned when passing through the official W3C validator, 1 warnings was returned.
+  ![W3C validator](/assets/images/readme/Score-html.jpg)
+ 
+  JS
+  - Script js: No errors or warnings were returned when passing through the official JSHint validator.
+  ![JSHint validator](/assets/images/readme/JS/Script-js-hint.jpg)
+  - Scores js: No errors or warnings were returned when passing through the official JSHint validator.
+  ![JSHint validator](/assets/images/readme/JS/Scores-js-hint.jpg)
+  - HighScore js: No errors or warnings were returned when passing through the official JSHint validator.
+  ![JSHint validator](/assets/images/readme/JS/HighScore-js-hint.jpg)
+
 - CSS
   - No errors were found when passing through the official W3C (Jigsaw) validator
-  ![(Jigsaw) validator](/assets/images/README/stylecsslvalidation.jpg)
-- LightHouse testing : All accessibility passed with 100%
-  - Home page
+  ![(Jigsaw) validator](/assets/images/readme/Style-css.jpg)
+
+- LightHouse testing : All accessibility is in green with score of 98 due to headings are not in order.
+  - Landing page
     - Desktop 
-     ![Desktop](/assets/images/README/LightHouse/homedeskLH.jpg)
+     ![Desktop](/assets/images/readme/light-house/Index-html-Lighthouse-desktop.jpg)
     - Mobile 
-     ![Mobile](/assets/images/README/LightHouse/homemobileLH.jpg)
-  - Places Page
+     ![Mobile](/assets/images/readme/light-house/Index-html-Lighthouse-mobile.jpg)
+  - Quiz Page
     - Desktop 
-     ![Desktop](/assets/images/README/LightHouse/placesdeskLH.jpg)
+     ![Desktop](/assets/images/readme/light-house/Quiz-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/README/LightHouse/placesmobileLH.jpg)
-  - Gallery Page
+     ![Mobile](/assets/images/readme/light-house/Quiz-html-Lighthouse-mobile.jpg)
+  - Score Page
     - Desktop
-     ![Desktop](/assets/images/README/LightHouse/gallerymobileLH.jpg)
+     ![Desktop](/assets/images/readme/light-house/Score-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/README/LightHouse/gallerydeskLH.jpg)
-  - Sign Up Page
+     ![Mobile](/assets/images/readme/light-house/Score-html-Lighthouse-mobile.jpg)
+  - High Score Page
     - Desktop
-     ![Desktop](/assets/images/README/LightHouse/signupdeskLH.jpg)
+     ![Desktop](/assets/images/readme/light-house/HighScore-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/README/LightHouse/signupmobileLH.jpg)
-  - Thank you Page
-    - Desktop
-     ![Desktop](/assets/images/README/LightHouse/thankyoudeskLH.jpg)
-    - Mobile
-     ![Mobile](/assets/images/README/LightHouse/thankyoumobileLH.jpg)
+     ![Mobile](/assets/images/readme/light-house/HighScore-html-Lighthouse-mobile.jpg)
 
 ### Unfixed Bugs
 
