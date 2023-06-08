@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */ 
+/*jshint esversion: 6 */
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
@@ -7,7 +7,7 @@ const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
 
-  
+
 
 let currentQuestion = {};
 let acceptingAnswer = true;
@@ -41,8 +41,8 @@ fetch("https://opentdb.com/api.php?amount=40&category=21&difficulty=easy&type=mu
 
             return formattedQuestion;
         });
-        
-       startGame();
+
+        startGame();
     })
     .catch((err) => {
         console.error(err);
@@ -112,4 +112,3 @@ const incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
-

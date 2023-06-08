@@ -52,36 +52,40 @@
 
   - The landing includes a photograph with two buttons to allow the user to understand exactly the purpose of this site. 
   - This section introduces the user to Sports Quiz page and its purpose.
+  - The fist button PLAY! is leading the user to the actual Quiz
+  - The second button High Score is leading the user to the top 5 High Scores from the Quiz
 
 ![Home Page](./assets/images/readme/landing.jpg)
 
-- __TOP 3 FISHING SPOTS IN UK - 2023__
+- __Quiz Page__
 
-  - Top 3 Fishing Spots section will allow the user to see which are the Top 3 Fishing spots in UK for 2023, voted from the other fishermans. 
-  - This user will find Pictures of the top 3 places aranged from First to Third with links leading to the places section. 
+  -  Page contains the same background image
+  -  The Quiz page includes 7 questions with 4 answers each( 1 correct and 3 incorrect). 
+  -  For every correct answer user get 100 points added to his total score.
+  -  It have 2 progress bars which are reflecting every answered question.
+     - The first one is with numbers.
+     - The second one is a empty bar which is filling 1/7 of its space after every answer .
 
-![Top 3 Places](./assets/images/README/top3places.jpg)
+![Quiz Page](./assets/images/readme/quiz-page.jpg)
 
-- __NEWS SECTION__
+- __Score Page__
 
-  - This section will provide the user with the 5 latest fishing news. 
-  - This section will be updated weekly in line with the sites news letter to keep the user up to date. 
 
-![News Section](./assets/images/README/NewsSection.jpg)
+  -  After answering all 7 questions, the user is sent to the Score page which contains un input field and 3 buttons.
+       - There He can see how much he scored.
+       - He needs to put a user name to make his score for the high Scoreboard.
+       - The User needs to press the SAVE! Button in order for his score to be saved in the local storage and will be transferred to the Home page.
+  -  Second Button is PLAY AGAIN! which will restart the quiz and user will be able to complete the quiz again.
+  - The third button is HOME!, it will lead the user to the home page where he can check the High Score page.  
 
-- __The Footer__ 
+![Score Page](./assets/images/readme/Score-page.jpg)
 
-  - The footer section includes links to the relevant social media sites for Best fishing Places In UK. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media.
-  - The footer is sticky and it's always displayed at the bottom of the screen viewport. 
+- __High Score__ 
 
-![Footer](./assets/images/README/footer.jpg)
-
-- __Gallery__
-  - The gallery will provide the user with supporting images to see some of the biggest catches from the top loactions in UK. 
-  - This section is valuable to the user as they will be able to see what fish were caught in these locations. 
-
-![Gallery](/assets/images/README/Gallery.jpg)
+  - High Score Page is displaying the top 5 scores in the game.
+  - It have a button HOME!, which will lead the user to the home page.  
+  
+  ![High Score](/assets/images/readme/High-scoreboard.jpg)
 
 - __Places__
   - The Places will provide the user with Images, short description and a link for the location from google maps. 
