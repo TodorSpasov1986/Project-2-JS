@@ -6,7 +6,8 @@ const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
-
+const CORRECT_BONUS = 100;
+const MAX_QUESTIONS = 7;
 
 
 let currentQuestion = {};
@@ -47,10 +48,6 @@ fetch("https://opentdb.com/api.php?amount=40&category=21&difficulty=easy&type=mu
     .catch((err) => {
         console.error(err);
     });
-
-/* Constants*/
-const CORRECT_BONUS = 100;
-const MAX_QUESTIONS = 7;
 
 const startGame = () => {
     questionCounter = 0;

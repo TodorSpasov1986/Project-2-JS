@@ -46,7 +46,7 @@
   - Featured on four pages, the full responsive navigation bar includes links to the Logo, the Home page and  Scores board,  and is identical on each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-![Nav Bar](./assets/images/readme/navbar.jpg)
+![Nav Bar](./readme/navbar.jpg)
 
 - __The landing page image__
 
@@ -55,13 +55,13 @@
   - The fist button PLAY! is leading the user to the actual Quiz
   - The second button High Score is leading the user to the top 5 High Scores from the Quiz
 
-![Home Page](./assets/images/readme/landing.jpg)
+![Home Page](./readme/landing.jpg)
 
 - __Loading__
 
--  When the user presses the quiz page, a Loading circle appears until the quiz is not loaded completely.
+   -  When the user presses the quiz page, a Loading circle appears until the quiz is not loaded completely.
  
-![Loading](./assets/images/readme/Loading.jpg)
+![Loading](./readme/Loading.jpg)
 
 - __Quiz Page__
 
@@ -72,7 +72,7 @@
      - The first one is with numbers.
      - The second one is a empty bar which is filling 1/7 of its space after every answer .
 
-![Quiz Page](./assets/images/readme/quiz-page.jpg)
+![Quiz Page](./readme/quiz-page.jpg)
 
 - __Score Page__
 
@@ -84,14 +84,14 @@
   -  Second Button is PLAY AGAIN! which will restart the quiz and user will be able to complete the quiz again.
   - The third button is HOME!, it will lead the user to the home page where he can check the High Score page.  
 
-![Score Page](./assets/images/readme/Score-page.jpg)
+![Score Page](./readme/Score-page.jpg)
 
 - __High Score__ 
 
   - High Score Page is displaying the top 5 scores in the game.
   - It have a button HOME!, which will lead the user to the home page.  
   
-  ![High Score](/assets/images/readme/High-scoreboard.jpg)
+  ![High Score](/readme/High-scoreboard.jpg)
 
 ### Features Left to Implement
 
@@ -115,53 +115,53 @@
 
 - HTML
   - Landing page: No errors or warnings were returned when passing through the official W3C validator.
-  ![W3C validator](/assets/images/readme/Index-html.jpg)
+  ![W3C validator](/readme/Index-html.jpg)
   - Quiz page: No errors were returned when passing through the official W3C validator, 2 warnings were returned.
-  ![W3C validator](/assets/images/readme/Quiz-html.jpg)
+  ![W3C validator](/readme/Quiz-html.jpg)
   - HighScore page: No errors or warnings were returned when passing through the official W3C validator.
-  ![W3C validator](/assets/images/readme/HighScore-html.jpg)
+  ![W3C validator](/readme/HighScore-html.jpg)
   - Score page: No errors were returned when passing through the official W3C validator, 1 warnings was returned.
-  ![W3C validator](/assets/images/readme/Score-html.jpg)
+  ![W3C validator](/readme/Score-html.jpg)
  
   JS
   - Script js: No errors or warnings were returned when passing through the official JSHint validator.
-  ![JSHint validator](/assets/images/readme/JS/Script-js-hint.jpg)
+  ![JSHint validator](/readme/js-hint/Script-js-hint.jpg)
   - Scores js: No errors or warnings were returned when passing through the official JSHint validator.
-  ![JSHint validator](/assets/images/readme/JS/Scores-js-hint.jpg)
+  ![JSHint validator](/readme/js-hint/Scores-js-hint.jpg)
   - HighScore js: No errors or warnings were returned when passing through the official JSHint validator.
-  ![JSHint validator](/assets/images/readme/JS/HighScore-js-hint.jpg)
+  ![JSHint validator](/readme/js-hint/HighScore-js-hint.jpg)
 
 - CSS
   - No errors were found when passing through the official W3C (Jigsaw) validator
-  ![(Jigsaw) validator](/assets/images/readme/Style-css.jpg)
+  ![(Jigsaw) validator](/readme/Style-css.jpg)
 
 - LightHouse testing : All accessibility is in green with score of 98 due to headings are not in order.
   - Landing page
     - Desktop 
-     ![Desktop](/assets/images/readme/light-house/Index-html-Lighthouse-desktop.jpg)
+     ![Desktop](/readme/light-house/Index-html-Lighthouse-desktop.jpg)
     - Mobile 
-     ![Mobile](/assets/images/readme/light-house/Index-html-Lighthouse-mobile.jpg)
+     ![Mobile](/readme/light-house/Index-html-Lighthouse-mobile.jpg)
   - Quiz Page
     - Desktop 
-     ![Desktop](/assets/images/readme/light-house/Quiz-html-Lighthouse-desktop.jpg)
+     ![Desktop](/readme/light-house/Quiz-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/readme/light-house/Quiz-html-Lighthouse-mobile.jpg)
+     ![Mobile](/readme/light-house/Quiz-html-Lighthouse-mobile.jpg)
   - Score Page
     - Desktop
-     ![Desktop](/assets/images/readme/light-house/Score-html-Lighthouse-desktop.jpg)
+     ![Desktop](/readme/light-house/Score-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/readme/light-house/Score-html-Lighthouse-mobile.jpg)
+     ![Mobile](/readme/light-house/Score-html-Lighthouse-mobile.jpg)
   - High Score Page
     - Desktop
-     ![Desktop](/assets/images/readme/light-house/HighScore-html-Lighthouse-desktop.jpg)
+     ![Desktop](/readme/light-house/HighScore-html-Lighthouse-desktop.jpg)
     - Mobile
-     ![Mobile](/assets/images/readme/light-house/HighScore-html-Lighthouse-mobile.jpg)
+     ![Mobile](/readme/light-house/HighScore-html-Lighthouse-mobile.jpg)
 
 ### Fixed Bugs
 
   - The site was created VSC on pc due to the limited hrs for GitHub and when it was transfered to it the paths in JS weren't working 
   - The site was geting a lot of errors in the console logs due to me using the same JS-script file for Index.html and quiz.html
-    ![JSconsole bug](/assets/images/readme/script-js-bug.jpg)
+    ![JSconsole bug](/readme/script-js-bug.jpg)
 
 ### Unfixed Bugs
 
