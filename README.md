@@ -157,9 +157,15 @@
     - Mobile
      ![Mobile](/assets/images/readme/light-house/HighScore-html-Lighthouse-mobile.jpg)
 
+### Fixed Bugs
+
+  - The site was created VSC on pc due to the limited hrs for GitHub and when it was transfered to it the paths in JS weren't working 
+  - The site was geting a lot of errors in the console logs due to me using the same JS-script file for Index.html and quiz.html
+    ![JSconsole bug](/assets/images/readme/script-js-bug.jpg)
+
 ### Unfixed Bugs
 
-No Unfixed bugs are found in the current version of the site
+  - Back-ground image is not at the center of the screen on every resolution.  
 
 ## Deployment
  
@@ -172,7 +178,7 @@ No Unfixed bugs are found in the current version of the site
    - The page will automatically refresh.
    - Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-The live link can be found here - https://todorspasov1986.github.io/Project-1/index.html
+- The live link can be found here - https://todorspasov1986.github.io/Project-2-JS/
 
 
 ## Credits 
@@ -180,46 +186,16 @@ The live link can be found here - https://todorspasov1986.github.io/Project-1/in
 
 ### Content 
 
-- The most of the structure and code was ispired from Cgiode Insitute learning content (Coffee coders and Love Running Projects)
-- The icons in the nav bar ,Top 3 section and footer were taken from [Font Awesome](https://fontawesome.com/)
-- The text for the News Section :
-   - First news was taken from https://www.sustainablefoodtrust.org : [Link to the News](https://sustainablefoodtrust.org/news-views/sustainable-seafood-uk/#:~:text=Known%20as%20'the%20Big%20Five,%2C%20haddock%2C%20tuna%20and%20prawns.)
-   - Second news was taken from https://en.wikipedia.org : [Link to the News](https://en.wikipedia.org/wiki/Kevin_VanDam)
-   - Third news was taken from https://www.wildlifetrusts.org : [Link to the News](https://www.wildlifetrusts.org/wildlife-explorer/marine/fish-sharks-skates-and-rays/lesser-weever-fish#:~:text=There%20are%20two%20species%20of,painful%20venom%20into%20unsuspecting%20victims!)
-   - Forth news was taken from https://fishingnews.co.uk : [Link to the News](https://fishingnews.co.uk/news/outrage-as-defra-closes-file-on-die-offs/#:~:text=23rd%20February%202023&text=Defra%20will%20not%20carry%20out,the%20region%2C%20reports%20Tim%20Oliver.)
-   - Fifth news was taken from https://www.theneweuropean.co.uk : [Link to the News](https://www.theneweuropean.co.uk/so-long-and-thanks-for-all-the-fish-brexit/)
-- The text for the Places page:
-   - First place was taken from https://en.wikipedia.org : [Link to the description](https://en.wikipedia.org/wiki/Lake_District#:~:text=A%20popular%20holiday%20destination%2C%20it,kilometres%20(912%20sq%20mi).)
-   - Second place was taken from https://www.visitherefordshire.co.uk : [Link to the description](https://www.visitherefordshire.co.uk/discover/pearl-lake-country-holiday-park)
-   - Third place was taken from https://westfieldfishery.co.uk : [Link to the description](https://westfieldfishery.co.uk/)
-   - Forth place was taken from  https://www.willerby.com : [Link to the description](https://www.willerby.com/blog/lifestyle/top-nine-uk-fishing-spots)
-   - Fifth place was taken from  https://www.willerby.com : [Link to the description](https://www.willerby.com/blog/lifestyle/top-nine-uk-fishing-spots)
+- Most of the structure and code were inspired by Code Insitute learning content. 
+- For the Java Script code is used Brian designs youtube video: How To Make Quiz App Using JavaScript(https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2877s).
+- The icons in the nav bar were taken from [Font Awesome](https://fontawesome.com/).
+- The question file is fetch from https://opentdb.com/ and the file url is: https://opentdb.com/api.php?amount=40&category=21&difficulty=easy&type=multiple
+- Code for the Loader circle is taken from w3schools-https://www.w3schools.com/howto/howto_css_loader.asp 
 
 ### Media
 
-- The photos used on the home page are from:
-   - Main Photo was taken from https://www.northyorkshirewaterpark.co.uk : [Link to the photo](https://www.northyorkshirewaterpark.co.uk/wp-content/uploads/2021/05/17091755a-1600x900.jpeg) 
-   - The First Place photo was taken from https://en.wikipedia.org :[Link to the photo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Keswick_Panorama_-_Oct_2009.jpg/1200px-Keswick_Panorama_-_Oct_2009.jpg)
-   - The Second Place photo was taken from https://www.trip.com :[Link to the photo](https://youimg1.tripcdn.com/target/0ww6t120008zg1rd08099.jpg?proc=source%2Ftrip)
-   - The Third Place photo was taken from http://westfieldfishery.co.uk :[Link to the photo](http://westfieldfishery.co.uk/wp-content/uploads/2015/07/home-header-image1.jpg)
-   - The Backgrond photo was taken from https://crowgreen-fishery.co.uk :[Link to the photo](https://crowgreen-fishery.co.uk/wp-content/uploads/2015/05/Car-park-1.jpg)
-- The images used for the gallery page were taken from :
-   - Photo 1 was taken from www.stephens-scown.co.uk: [Link to the photo](https://www.stephens-scown.co.uk/app/uploads/2021/11/GettyImages-827888510.jpg)
-   - Photo 2 was taken from www.en.wikipedia.org : [Link to the photo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Angler_at_devizes_england_arp.jpg/300px-Angler_at_devizes_england_arp.jpg)
-   - Photo 3 was taken from www.media.wired2fish.com : [Link to the photo](https://media.wired2fish.com/uploads/2023/02/bass-fishing-basics-768x432.webp)
-   - Photo 4 was taken from www.www.seaangler.co.uk : [Link to the photo](https://www.seaangler.co.uk/wp-content/uploads/sites/3/cotwweb.jpg)
-   - Photo 5 was taken from www.ctfassets.net : [Link to the photo](https://images.ctfassets.net/pujs1b1v0165/2AvtJ9pcEJ4bjxkR8Vc5bJ/5d1033f3c8f450f73cf54b521bb06b4e/How_to_Find_the_Right_Depth_for_Bass.jpg?w=1300&fit=fill&fm=webp)
-   - Photo 6 was taken from www.news.sky.com : [Link to the photo](https://e3.365dm.com/22/11/1600x900/skynews-giant-goldfish-carp_5974274.jpg?20221122082215 )
-   - Photo 7 was taken from www.media.npr.org : [Link to the photo](https://media.npr.org/assets/img/2022/12/05/bk-87_custom-b15f886a4bc51e70e12ac79d0f6cb5a2ac2202f0-s1300-c85.webp)
-   - Photo 8 was taken from www.static.wixstatic.com : [Link to the photo](https://static.wixstatic.com/media/1e31fd_55d0f8ea703b45b8a1c0525c0b74c2bd~mv2.jpg/v1/crop/x_0,y_75,w_3024,h_3046/fill/w_360,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9.jpg)
-   - Photo 9 was taken from www.farlows.co.uk : [Link to the photo](https://www.farlows.co.uk/media/amasty/blog/cache/h/o/1100/600/how-to-fish-for-salmon.jpg)
-   - Photo 10 was taken from www.static.wixstatic.com : [Link to the photo](https://static.wixstatic.com/media/a5d390_26147445d1d24f76a7c234e198118b43.png/v1/fill/w_663,h_491,al_c,lg_1,q_85,enc_auto/a5d390_26147445d1d24f76a7c234e198118b43.png)
-   - Photo 11 was taken from www.static.wixstatic.com : [Link to the photo](https://static.wixstatic.com/media/a5d390_0c498307747f42e4ace6a87c1371df99~mv2.jpg/v1/fill/w_784,h_692,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a5d390_0c498307747f42e4ace6a87c1371df99~mv2.jpg)
-   - Photo 12 was taken from /www.fishingtackleandbait.co.uk : [Link to the photo](https://www.fishingtackleandbait.co.uk/Images/Homepages/Grid2022/webp/Warehouse-Clearence.webp)
-   - Photo 13 was taken from www.talkseafishing.co.uk : [Link to the photo](https://www.talkseafishing.co.uk/wp-content/uploads/2020/08/garfish-body-shot-1-930x620.jpg)
-   - Photo 14 was taken from www.static.wixstatic.com : [Link to the photo](https://static.wixstatic.com/media/1cf8fa_6940017ac1f14b8097eaad763ffb4409~mv2.jpg/v1/fill/w_978,h_342,q_90/1cf8fa_6940017ac1f14b8097eaad763ffb4409~mv2.jpg)
-- The photo used on the Signup page is from www.sandwichlakes.co.uk: [Link to the photo](https://www.sandwichlakes.co.uk/wp-content/uploads/2016/03/victory_fishing_lake_sandwich_kent.jpg)
-- The photo used on the Thank you up page is from www.wallpaper.dog :[Link to the photo](https://wallpaper.dog/large/10736616.jpg)
+- The photo used as background image is from: https://www.freepik.com/free-photo/sports-tools_18415697.htm#query=sport&position=0&from_view=keyword&track=sph
+   
 
 ### Read me File
 
